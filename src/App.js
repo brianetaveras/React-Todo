@@ -10,6 +10,11 @@ class App extends React.Component {
     }
 
   }
+  clearCompleted = taskStatus =>{
+    this.setState({
+      tasks: this.state.tasks.filter(task=>task.completed !== true)
+    })
+  }
 
   addTask = task =>{
     const newTask = {
@@ -42,7 +47,11 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <TodoList tasks={this.state.tasks} toggleTask={this.toggleTask} addTask={this.addTask}/>
+        <TodoList 
+        tasks={this.state.tasks} 
+        toggleTask={this.toggleTask} 
+        addTask={this.addTask}
+        clearCompleted={this.clearCompleted}/>
       </div>
     );
   }

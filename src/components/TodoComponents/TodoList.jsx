@@ -3,10 +3,12 @@ import Item from './Todo'
 import TodoForm from './TodoForm'
 
 
-const toDo = ({tasks, toggleTask, addTask}) =>{
+const toDo = ({tasks, toggleTask, addTask, clearCompleted}) =>{
     return (
         <div className="todo-list">
-                    <TodoForm addTask={addTask}/>
+                    <TodoForm 
+                    addTask={addTask}
+                    clearCompleted={clearCompleted}/>
 
             {tasks.map(task=>{
                 return <Item toggleTask={toggleTask} task={task} key={task.id}/>
