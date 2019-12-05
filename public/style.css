@@ -62,3 +62,7 @@ body {
     padding: 5px;
     margin: 5px;
 }
+
+.todo-form button:active{
+    border: none;
+}

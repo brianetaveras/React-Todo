@@ -8,9 +8,10 @@ class TodoForm extends React.Component {
         }
     }
     submitHandler = e =>{
-        e.preventDefault()
-        this.props.addTask(this.state.task)
-        this.setState({task: ''})
+            e.preventDefault()
+            this.props.addTask(this.state.task)
+            this.setState({task: ''})
+
     }
     changeHandler = e =>{
         this.setState({task: e.target.value})
@@ -20,7 +21,7 @@ class TodoForm extends React.Component {
     render(){
         return (
             <form 
-            autocomplete="off"
+            autoComplete="off"
             className="todo-form"
             onSubmit={this.submitHandler}>
                 <input 
