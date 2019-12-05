@@ -1,9 +1,13 @@
 import React from 'react'
 import Item from './Todo'
+import TodoForm from './TodoForm'
 
-const toDo = ({tasks, toggleTask}) =>{
+
+const toDo = ({tasks, toggleTask, addTask}) =>{
     return (
         <div className="todo-list">
+                    <TodoForm addTask={addTask}/>
+
             {tasks.map(task=>{
                 return <Item toggleTask={toggleTask} task={task} key={task.id}/>
             })}

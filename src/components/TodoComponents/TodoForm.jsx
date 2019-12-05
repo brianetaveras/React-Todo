@@ -23,6 +23,7 @@ class TodoForm extends React.Component {
             className="todo-form"
             onSubmit={this.submitHandler}>
                 <input 
+                placeholder="Add a task"
                 type="text" 
                 name="task" 
                 value={this.state.task}

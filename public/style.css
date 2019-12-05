@@ -1,26 +1,63 @@
-.todo-list{
-    background: #f1f1f1;
-    max-width: 700px;
-    margin: 0 auto;
-    box-shadow: 1px 1px 5px #363636;
-    padding: 10px;
+body {
+  background: linear-gradient(
+    135deg,
+    rgba(164, 6, 6, 1) 0%,
+    rgba(217, 131, 36, 1) 100%
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
-.task{
-    padding: 20px;
-    margin: 5px;
-    background: white;
-    border-radius: 5px;
+.todo-list {
+  background: #ffffff;
+  max-width: 700px;
+  margin: 100px auto;
+  box-shadow: 1px 1px 5px #363636;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.task {
+  padding: 20px;
+  margin: 5px;
+  background: white;
+  border-radius: 5px;
+  border: 2px solid #f1f1f1;
 }
 
 .task .title {
-    text-decoration: inherit;
+  text-decoration: inherit;
 }
-.pending{
-    border-left: solid 5px red;
+.pending {
+  border-left: solid 5px red;
 }
-.completed{
-    text-decoration: line-through;
-    border-left: solid 5px green;
+.completed {
+  text-decoration: line-through;
+  border-left: solid 5px green;
+  background: #f1f1f1;
 }
 
+.todo-form {
+  max-width: 700px;
+  margin: 10px auto;
+  height: 50px;
+}
+
+.todo-form input {
+  height: 25px;
+  background: #ededff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.todo-form button{
+    background: #ed018d;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    padding: 5px;
+    margin: 5px;
+}
