@@ -1,12 +1,11 @@
 import React from 'react'
 import Item from './Todo'
 
-const toDo = ({tasks}) =>{
-
+const toDo = ({tasks, toggleTask}) =>{
     return (
-        <div>
+        <div className="todo-list">
             {tasks.map(task=>{
-                return <Item task={task} key={task.id}/>
+                return <Item toggleTask={toggleTask} task={task} key={task.id}/>
             })}
         </div>
     )
