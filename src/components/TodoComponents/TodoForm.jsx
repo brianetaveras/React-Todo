@@ -20,6 +20,7 @@ class TodoForm extends React.Component {
     render(){
         return (
             <form 
+            autocomplete="off"
             className="todo-form"
             onSubmit={this.submitHandler}>
                 <input 
